@@ -18,6 +18,13 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "test": "babel-tape-runner server/**/*.test.js && babel-tape-runner client/**/*.test.js"
+  },
+  "devDependencies": {
+    "babel-tape-runner": "^2.0.1",
+    "enzyme": "^2.7.1",
+    "react-addons-test-utils": "^15.4.2",
+    "tape": "^4.6.3"
   }
 }
